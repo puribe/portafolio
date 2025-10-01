@@ -1,26 +1,353 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Portafolio - puribe</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    h1 { color: #333366; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Pablo Uribe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 5px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 25px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .section-header {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .section-content ul {
+            list-style-type: disc;
+            margin: 0;
+            padding-left: 20px;
+        }
+        .section-content li {
+            margin-bottom: 5px;
+        }
+        .subsection-header {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .skills-list div {
+            padding-bottom: 5px;
+        }
+        .category-title {
+            font-weight: bold;
+        }
+        .job-details {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #eee;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-  <h1>Mi Currículum Vitae</h1>
-  <p><strong>Nombre:</strong> [Tu Nombre]</p>
-  <p><strong>Email:</strong> [tu@email.com]</p>
-  <h2>Experiencia</h2>
-  <ul>
-    <li>Trabajo 1 - Descripción</li>
-    <li>Trabajo 2 - Descripción</li>
-  </ul>
-  <h2>Educación</h2>
-  <ul>
-    <li>Universidad - Carrera</li>
-  </ul>
-  <!-- Agrega más secciones según lo necesites -->
+
+<div class="container">
+    <header>
+        <h1>Pablo Uribe</h1>
+        <p class="contact-info">
+            Santiago, Chile | <a href="https://linkedin.com/in/puribe">linkedin.com/in/puribe</a>
+        </p>
+    </header>
+
+    <section>
+        <h2>Resumen Profesional</h2>
+        <p>
+            Ingeniero Civil Informático con más de 15 años de experiencia liderando la creación e implementación de soluciones tecnológicas en sectores como fintech, telecomunicaciones, transporte y educación. Como Arquitecto, he diseñado arquitecturas escalables y eficientes, tomando decisiones clave sobre la integración de sistemas, la selección de tecnologías y la implementación de soluciones orientadas a servicios. Mi enfoque principal es alinear las soluciones con los objetivos estratégicos del negocio, optimizando costos y tiempos de entrega. Cuento con una sólida experiencia en el diseño de plataformas que evolucionaron a modelos Saas y he liderado equipos técnicos multidisciplinarios, colaborando con las áreas de negocio para asegurar implementaciones exitosas. Poseo un sólido entendimiento de marcos como TOGAF, ITIL, PMI y Scrum, con un claro enfoque en la articulación entre la arquitectura tecnológica y los objetivos de negocio.
+        </p>
+    </section>
+
+    <section>
+        <h2>Experiencia Profesional</h2>
+        
+        <div>
+            <div class="section-header">
+                <span>Arquitecto de datos</span>
+                <span>Universidad San Sebastián</span>
+            </div>
+            <div class="job-details">
+                <span>Santigo, Chile</span>
+                <span>Junio 2025-Actualidad</span>
+            </div>
+            <ul class="section-content">
+                <li>Actuando como nexo técnico entre el proveedor tecnológico y las áreas funcionales, asegurando la comprensión del ecosistema de datos y facilitando su adopción.</li>
+                <li>Participando en el diseño del modelo de gobernanza de datos para la organización, estableciendo los cimientos para la creación de productos de datos de alto valor.</li>
+                <li>Construyendo una base de conocimiento técnico y definiendo artefactos como patrones, guías y lineamientos para garantizar la sostenibilidad y futura extensión de la plataforma.</li>
+                <li>Trabajando con un stack tecnológico basado en servicios serverless de AWS (Glue, Step Functions, Lambda, etc.), utilizando Power BI para visualización y GitFlow (Bitbucket) para control de versiones.</li>
+            </ul>
+        </div>
+        <hr>
+
+        <div>
+            <div class="section-header">
+                <span>Jefe de proyectos</span>
+                <span>Devetel Servicios e Ingeniería SA</span>
+            </div>
+            <div class="job-details">
+                <span>Santiago, Chile</span>
+                <span>Mayo 2018-Septiembre 2023</span>
+            </div>
+            <ul class="section-content">
+                <li>Lideré el diseño y la implementación de un Gateway de Medios de Pago con una arquitectura activo-activo redundante, escalando su capacidad para procesar 100x más transacciones.</li>
+                <li>Gestioné la integración con múltiples medios de pago, garantizando la seguridad (PCI) y el cumplimiento de estándares.</li>
+                <li>Dirigí el desarrollo de un dashboard de KPIs en tiempo real y un portal cautivo con autenticación OAuth 2.0.</li>
+                <li>Reduje los tiempos de integración de clientes mediante la estandarización del modelo SaaS y la creación de manuales de operación.</li>
+                <li>Actúe como enlace entre equipos técnicos y comerciales para alinear los objetivos de negocio con las soluciones tecnológicas.</li>
+            </ul>
+        </div>
+        <hr>
+
+        <div>
+            <div class="section-header">
+                <span>Arquitecto TI</span>
+                <span>Entel SA</span>
+            </div>
+            <div class="job-details">
+                <span>Santigo, Chile</span>
+                <span>Agosto 2013-Enero 2018</span>
+            </div>
+            <ul class="section-content">
+                <li>Lideré el diseño de la Arquitectura de Soluciones TI, impulsando la adopción de estándares y la alineación con la estrategia del negocio.</li>
+                <li>Definí y ejecuté la estrategia de blindaje de aplicaciones para mitigar riesgos técnicos y fortalecer la resiliencia de la plataforma.</li>
+                <li>Creé y mantuve roadmaps tecnológicos bianuales, asegurando la planificación estratégica y la evolución de la plataforma.</li>
+            </ul>
+        </div>
+        <hr>
+
+        <div>
+            <div class="section-header">
+                <span>Jefe de proyectos</span>
+                <span>Devetel Servicios e Ingeniería SA</span>
+            </div>
+            <div class="job-details">
+                <span>Santigo, Chile</span>
+                <span>Marzo 2011-Agosto 2013</span>
+            </div>
+            <ul class="section-content">
+                <li>Lideré el desarrollo y la implementación de una plataforma de Gestión de Recargas de alta disponibilidad, logrando su implementación exitosa en 3 operadores móviles.</li>
+                <li>Coordiné equipos técnicos y clientes para cumplir objetivos de negocio y SLAs, participando también como asesor técnico en actividades de preventa.</li>
+            </ul>
+        </div>
+        <hr>
+
+        <div>
+            <div class="section-header">
+                <span>Ingeniero de desarrollo</span>
+                <span>Exceed IT Ltda</span>
+            </div>
+            <div class="job-details">
+                <span>Santigo, Chile</span>
+                <span>Febrero 2008-Marzo 2011</span>
+            </div>
+            <ul class="section-content">
+                <li>Desarrollé y lideré la implementación de un sistema móvil para la gestión de ventas, notas de venta y facturas.</li>
+                <li>Integré pagos presenciales y venta de recargas telefónicas en el sistema de pasajes, con 5 operadores de tarjetas de crédito/débito.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Educación</h2>
+        <div>
+            <div class="section-header">
+                <span>Ingeniería Civil de Informática</span>
+                <span>UNIVERSIDAD DE SANTIAGO DE CHILE</span>
+            </div>
+            <div class="job-details">
+                <span>Grado académico: Licenciado en Ciencias de la Computación</span>
+            </div>
+            <hr>
+            <div class="section-header">
+                <span>Diplomado en Gestión Informática</span>
+                <span>UNIVERSIDAD DE SANTIAGO DE CHILE</span>
+            </div>
+            <hr>
+            <div class="section-header">
+                <span>Diplomado en Control, Seguridad y Auditoría Computacional</span>
+                <span>UNIVERSIDAD DE SANTIAGO DE CHILE</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills Adicionales</h2>
+        <div class="skills-list">
+            <div><span class="category-title">Lenguajes de Programación:</span> Java, PHP, Perl, JavaScript, Batch, Python.</div>
+            <div><span class="category-title">Frameworks y Herramientas:</span> Spring Boot, Laravel, Spring, Oracle SOA Suite, OSB.</div>
+            <div><span class="category-title">Bases de Datos:</span> MySQL, Oracle, PostgreSQL, SQL Server.</div>
+            <div><span class="category-title">Arquitectura y API:</span> REST, Swagger, SOAP, JWT, OAuth.</div>
+            <div><span class="category-title">DevOps y Control de Versiones:</span> GIT, Bitbucket.</div>
+            <div><span class="category-title">Cloud:</span> AWS, Azure.</div>
+            <div><span class="category-title">Metodologías y Gestión de Proyectos:</span> TOGAF, ETOM, ITIL, COBIT, PMI, Scrum, MS Project.</div>
+            <div><span class="category-title">Herramientas de Testing y Colaboración:</span> Postman, SoapUI, Slack, Jira, Trello.</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Cursos y Certificaciones</h2>
+        <div class="section-content">
+            <div class="subsection-header">Cloud Computing & DevOps:</div>
+            <ul>
+                <li>Bootcamp de Seguridad Cloud, Talento Digital para Chile (201 horas)</li>
+                <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+                <li>AWS Cloud Practitioner Essentials</li>
+                <li>AWS Cloud Quest: Cloud Practitioner</li>
+                <li>IBM - Introduction to DevOps</li>
+                <li>IBM - Getting Started with Git and GitHub</li>
+                <li>Y otros cursos específicos de AWS Educate y AWS SkillBuilder</li>
+            </ul>
+            <div class="subsection-header">Gestión de Proyectos y Metodologías Ágiles:</div>
+            <ul>
+                <li>PMI - Fundamentos de la Dirección de Proyectos Ágiles</li>
+                <li>PMI - Fundamentos de la Dirección de Proyectos Predictive</li>
+                <li>ScrumStudy - Scrum Fundamentals Certified</li>
+                <li>IBM - Agile Explorer</li>
+                <li>Atlassian - Get the most out of Jira Learning Path</li>
+            </ul>
+            <div class="subsection-header">Habilidades de Liderazgo y Desarrollo Profesional:</div>
+            <ul>
+                <li>McKinsey.org Forward Program</li>
+                <li>Santander Open Academy - Aprende a gestionar tu tiempo</li>
+                <li>Santander Open Academy - Lidera a Toda Velocidad: Lecciones de la F1</li>
+            </ul>
+            <div class="subsection-header">Otros:</div>
+            <ul>
+                <li>TOGAF 9.1 Nivel 1 y 2, Dux Diligens</li>
+                <li>Maestría Java SE EE 6, Trackit Entrenamiento y Capacitación</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+    <h2>Credenciales Digitales</h2>
+    <style>
+        .badges-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            margin-top: 15px;
+        }
+        .badges-table td {
+            text-align: center;
+            padding: 5px;
+            vertical-align: top;
+        }
+        .badge-img {
+            max-width: 100px;
+            max-height: 100px;
+            display: block;
+            margin: auto;
+        }
+        /* Estilos para la tabla y las celdas */
+        .badges-table {
+          width: 100%;
+          border-collapse: collapse;
+          table-layout: fixed; /* Esto ayuda a que las columnas tengan el mismo ancho */
+        }
+        
+        .badges-table td {
+          padding: 10px;
+          vertical-align: top;
+          text-align: center; /* Alinea el contenido de la celda al centro */
+        }
+        
+        .badge-img {
+          max-width: 100px; /* Tamaño máximo para la imagen de la insignia */
+          height: auto;
+          display: block; /* Asegura que la imagen no tenga espacios adicionales */
+          margin: 0 auto; /* Centra la imagen */
+        }
+        
+        /* Estilos para el nombre de la insignia */
+        .badge-name {
+          margin-top: 5px;
+          font-size: 0.8em; /* Tamaño de fuente más pequeño para el nombre */
+          line-height: 1.2; /* Espaciado entre líneas */
+          text-align: center;
+          word-wrap: break-word; /* Rompe palabras largas para que no se desborden */
+        }
+    </style>
+    <table class="badges-table">
+        <tr>
+            <td><a href="https://learn.microsoft.com/en-us/users/luisosvaldogonzlezcabezas-9347/credentials/7fe6a8ee89e8e1c6" target="_blank"><img class="badge-img" src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" alt="Badge 1"></a><p class="badge-name">Microsoft Certified: Azure Fundamentals (AZ-900)</p></td>
+            <td><a href="https://www.credly.com/badges/445d48f4-749b-49fe-a1a2-fb23a7d19c6e/public_url" target="_blank"><img class="badge-img" src="https://images.credly.com/images/bad47198-deb5-48db-bbc3-85adb64db125/blob" alt="Badge 1"></a><p class="badge-name">McKinsey.org Forward Program</p></td>
+            <td><a href="https://drive.google.com/file/d/1sPpmpm3Q8oNi-0hW_Lp5ijcA0cjsTQtT/view" target="_blank"><img class="badge-img" src="https://infosyte.com/wp-content/uploads/2023/07/AWS-Cloud-Practitioner-Essentials.png" alt="Badge 1"></a><p class="badge-name">AWS Cloud Practitioner Essentials</p></td>
+            <td><a href="https://www.credly.com/badges/7f0bde56-ee49-4d4a-b436-53bcb54bd899/public_url" target="_blank"><img class="badge-img" src="https://images.credly.com/images/2784d0d8-327c-406f-971e-9f0e15097003/image.png" alt="Badge 2"></a><p class="badge-name">AWS Cloud Quest: Cloud Practitioner</p></td>
+            <td><a href="https://www.credly.com/badges/664837cb-06e7-4afe-9d65-7b7bf79b6e77/public_url" target="_blank"><img class="badge-img" src="https://images.credly.com/images/c38c229e-0011-4752-9ee0-bb7b4a4d0ab0/KickoffAgileBadge.png" alt="Badge 3"></a><p class="badge-name">Fundamentos de la Dirección de Proyectos Ágiles</p></td>
+        </tr>      
+        <tr>
+            <td><a href="https://www.credly.com/badges/5e2bfe7a-8b11-46a1-8347-16731b0755a6/public_url" target="_blank"><img class="badge-img" src="https://images.credly.com/images/dc9bd8c5-2aca-4fd1-8b74-694cde87ecb0/image.png" alt="Badge 5"></a><p class="badge-name">Fundamentos de la Dirección de Proyectos Predictive</p></td>
+            <td><a href="https://www.credly.com/badges/9e1c28a5-6217-4c59-8d4d-cf910101ce07/public_url" target="_blank"><img class="badge-img" src="https://images.credly.com/images/3b7846e2-bdbd-4ed6-8543-182f47502190/image.png" alt="Badge 4"></a><p class="badge-name">Agile Explorer</p></td>
+            <td><a href="https://www.credly.com/badges/f66ea8b6-a1e1-42ea-b86d-6b72fadb25dc/public_url" target="_blank"><img class="badge-img" src="https://images.credly.com/images/9358115e-ead7-47c2-91e2-165b6a650a1b/image.png" alt="Badge 7"></a><p class="badge-name">AWS Educate Getting Started with Compute</p></td>
+            <td><a href="https://www.credly.com/badges/8e99a4fc-5dfc-4c55-affe-96620d3f2dd7/public_url" target="_blank"><img class="badge-img" src="https://images.credly.com/images/9358115e-ead7-47c2-91e2-165b6a650a1b/image.png" alt="Badge 8"></a><p class="badge-name">AWS Educate Getting Started with Cloud Ops</p></td>
+            <td><a href="https://www.credly.com/badges/3318bc13-c427-434f-9a57-78be743f1b67/public_url" target="_blank"><img class="badge-img" src="https://images.credly.com/images/6f135924-7645-4bd2-ab68-3bc0b49c7e27/image.png" alt="Badge 9"></a><p class="badge-name">AWS Educate Getting Started with Databases</p></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.credly.com/badges/6b175769-9332-4f05-9361-e0bd1d8013e4/public_url" target="_blank"><img class="badge-img" src="https://images.credly.com/images/979e42e2-1d32-4d21-97ea-53d991ea50fb/image.png" alt="Badge 10"></a><p class="badge-name">AWS Educate Getting Started with Networking</p></td>
+            <td><a href="https://www.credly.com/badges/44b7c294-db8b-48c4-82f9-168003b808e8/public_url" target="_blank"><img class="badge-img" src="https://images.credly.com/images/80845928-d1f8-4549-ae9d-27676fba897e/image.png" alt="Badge 11"></a><p class="badge-name">AWS Educate Getting Started with Security</p></td>
+            <td><a href="https://www.credly.com/badges/b3e3a5b7-a9de-4103-83bb-807b92c71169/public_url" target="_blank"><img class="badge-img" src="https://images.credly.com/images/629a2bb9-14a6-47b3-b17e-f1056b1404d0/image.png" alt="Badge 12"></a><p class="badge-name">AWS Educate Getting Started with Serverless</p></td>
+            <td><a href="https://www.credly.com/badges/f90a622d-9fda-45d8-a1cd-83ca1f53dc58/public_url" target="_blank"><img class="badge-img" src="https://images.credly.com/images/5bf37709-4b69-4cdc-9edc-af7b3370d427/image.png" alt="Badge 13"></a><p class="badge-name">AWS Educate Getting Started with Storage</p></td>
+            <td><a href="https://www.credly.com/badges/c6516cba-99a6-4f0b-923e-baae7aa926ff/public_url" target="_blank"><img class="badge-img" src="https://images.credly.com/images/8d67bbf4-128b-4141-b5f1-1bc61bbfbaa6/image.png" alt="Badge 14"></a><p class="badge-name">AWS Educate Introduction to Cloud 101</p></td>
+        </tr>
+        <tr>
+            <td><a href="https://drive.google.com/file/d/1mhxwFmEIqeax_qtRx4kBAQxp-T3lD-sz/view" target="_blank"><img class="badge-img" src="https://media.licdn.com/dms/image/v2/D4D22AQH9KVt1azgTwg/feedshare-shrink_2048_1536/B4DZbSaywPGwAo-/0/1747286962737?e=2147483647&v=beta&t=cqYvez9A4XhkPhZ2oJL5mM_JzV_9JZohL7BaL3JkDOo" alt="Badge 10"></a><p class="badge-name">AWS Educate Emerging Talent Community Member</p></td>
+            <td><a href="https://www.coursera.org/account/accomplishments/verify/IHFBZZQYSBM7" target="_blank"><img class="badge-img" src="https://images.credly.com/images/9a0255eb-a47d-4f3a-9611-243bfe3eb9e4/twitter_thumb_201604_image.png" alt="Badge 11"></a><p class="badge-name">Getting Started with Git and GitHub</p></td>
+            <td><a href="https://www.coursera.org/account/accomplishments/verify/J0L8N8HVVYBI" target="_blank"><img class="badge-img" src="https://images.credly.com/images/48847c2a-7b9a-4044-b13d-bb175649904b/twitter_thumb_201604_image.png" alt="Badge 12"></a><p class="badge-name">Introduction to DevOps</p></td>
+            <td><a href="https://drive.google.com/file/d/1K0Y60A4queow55vrrGAI0lxjcxh57_y3/view" target="_blank"><img class="badge-img" src="https://media.licdn.com/dms/image/v2/C4E12AQFk60dsM5kO-A/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1635114070340?e=2147483647&v=beta&t=cdLyE9E4OMP8miwbXdTyE0gdLJnCUZUehyg1T-oJFis" alt="Badge 13"></a><p class="badge-name">Scrum Fundamentals Certified</p></td>
+            <td><a href="https://drive.google.com/file/d/1QKYW6fEsw7Z46rlJGaH5X64pYwIcPWQF/view" target="_blank"><img class="badge-img" src="https://legit.de/wp-content/uploads/2024/11/Atlassian-University-Badges2.png" alt="Badge 14"></a><p class="badge-name">Get the most out of Jira Learning Path</p></td>
+        </tr>
+        <tr>
+            <td><a href="https://drive.google.com/file/d/16pB4sjhfx8_gSn7uPi0z18WsdETncTKH/view" target="_blank"><img class="badge-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwC2G_7dkNIFeZrBwjMry10VsAQC-jzkZ7-Q&s" alt="Badge 10"></a><p class="badge-name">Aprende a gestionar tu tiempo</p></td>
+            <td><a href="https://drive.google.com/file/d/1IqRzvzfr7_4pj4_9IZkmCSEZ89Kg4PV6/view" target="_blank"><img class="badge-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwC2G_7dkNIFeZrBwjMry10VsAQC-jzkZ7-Q&s" alt="Badge 11"></a><p class="badge-name">Lidera a Toda Velocidad: Lecciones de la F1</p></td>
+            <td><a href="https://drive.google.com/file/d/1Uuh3x_-t0ChcxfzyER8XtfadKlqng5t7/view" target="_blank"><img class="badge-img" src="https://desafiolatam.com/wp-content/uploads/2024/05/cropped-flaticon-latam.png" alt="Badge 12"></a><p class="badge-name">Introducción a la Programación con Python</p></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    </section>
+
+</div>
+
 </body>
 </html>
